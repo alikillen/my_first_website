@@ -9,18 +9,6 @@
   --black: #111111;
 }
 
-/* Base HTML Styles */
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap');
-
-:root {
-  --brand: #8246af;
-  --action: #ffa300;
-  --white: #ffffff;
-  --base-light: #cdb5df;
-  --base-dark: #0d0711;
-  --black: #111111;
-}
-
 /* CSS Reset */
 
 html {
@@ -234,4 +222,8 @@ footer {
 .socials-icon {
   width: 40px;
   height: 40px;
+}
+
+#weirdID {
+  color: green;
 }
