@@ -101,15 +101,42 @@ select {
 /* header */
 header .mobile-header {
   padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header button {
   all: unset;
 }
 
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul {
+    display: flex;
+    gap: 24px;
+    margin-right: 16px;
+  }
+
+  header .mobile-header .hamburger-icon {
+    display: none;
+  }
+}
+
 /* .logo */
 .logo {
   height: 50px;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    height: 100px;
+  }
 }
 
 /* .mobile-nav */
@@ -123,6 +150,18 @@ header button {
 /* .desktop-nav */
 .desktop-nav {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop-nav a {
+    text-decoration: none;
+    font-size: larger;
+    color: var(--black);
+  }
+
+  .desktop-nav {
+    display: inline-block;
+  }
 }
 
 /* .hamburger-icon  */
@@ -147,6 +186,23 @@ header button {
 .hero .hero-accent {
   color: var(--action);
 }
+@media (min-width: 768px) {
+  .hero {
+    padding: 120px 56px;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    max-width: 70%;
+  }
+}
+
+/* .articles-container  */
+@media (min-width: 768px) {
+  .articles-container {
+    display: flex;
+  }
+}
 
 article {
   padding: 32px 16px;
@@ -156,8 +212,20 @@ article {
   transition: all 0.3s ease;
 }
 
+@media (min-width: 768px) {
+  article {
+    padding: 56px;
+  }
+}
+
 article:hover {
   filter: contrast(150%);
+}
+
+/* does this do anything... */
+article .article-heading {
+  display: flex;
+  justify-content: flex-start;
 }
 
 article .icon {
@@ -214,15 +282,40 @@ article p {
   cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  .contact-form h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .contact-form form {
+    max-width: 60%;
+    margin: 40px auto;
+  }
+}
+
 /* footer */
 footer {
   padding: 16px;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .socials-icon {
   width: 40px;
   height: 40px;
+}
+
+@media (min-width: 768px) {
+  footer {
+    justify-content: center;
+  }
+
+  footer .socials-icon {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 #weirdID {
