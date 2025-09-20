@@ -147,7 +147,14 @@ header button {
   color: var(--black);
   display: block;
   padding: 4px 16px;
+  display: flex;
+  justify-content: center;
 }
+
+/* .mobile-nav ul {
+  display: flex;
+  justify-content: center;
+} */
 
 /* .desktop-nav */
 .desktop-nav {
