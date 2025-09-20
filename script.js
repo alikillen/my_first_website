@@ -1,6 +1,8 @@
 console.log('hello world');
 
-// this is some javascript code from
+// this is some javascript code from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+
+// just simple to toggle the menu on and off, please mess around with it if you like
 
 
 function toggleMenu() {
