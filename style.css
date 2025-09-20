@@ -13,6 +13,7 @@
 
 html {
   box-sizing: border-box;
+  /* this is our ROOT font size, which 'rem' size is relevant to */
   font-size: 16px;
   font-family: 'Inter', sans-serif;
   color: var(--black);
@@ -101,15 +102,43 @@ select {
 /* header */
 header .mobile-header {
   padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header button {
   all: unset;
 }
 
+/* header media query */
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+    gap: 24px;
+    margin-right: 16px;
+  }
+
+  header .mobile-header .hamburger-icon {
+    display: none;
+  }
+}
+
 /* .logo */
 .logo {
   height: 50px;
+}
+
+/* logo media query */
+@media (min-width: 768px) {
+  .logo {
+    height: 100px;
+  }
 }
 
 /* .mobile-nav */
@@ -123,6 +152,19 @@ header button {
 /* .desktop-nav */
 .desktop-nav {
   display: none;
+}
+
+/* desktop nav media query */
+@media (min-width: 768px) {
+  .desktop-nav a {
+    text-decoration: none;
+    font-size: larger;
+    color: var(--black);
+  }
+
+  .desktop-nav {
+    display: inline-block;
+  }
 }
 
 /* .hamburger-icon  */
@@ -146,6 +188,19 @@ header button {
 
 .hero .hero-accent {
   color: var(--action);
+}
+
+/* hero media query */
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 120px 56px;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    max-width: 70%;
+  }
 }
 
 article {
