@@ -10,8 +10,26 @@ function toggleMenu() {
 
   if (mobileNav.style.display === "block") {
     mobileNav.style.display = "none";
+    // mobileNav.animate([
+    //   { height: 'auto' }, // Start state
+    //   { height: '0px' }  // End state
+    // ], {
+    //   duration: 500, // Animation duration in milliseconds
+    //   easing: 'ease-in-out',
+    //   fill: 'forwards' // Keep the end state after animation
+    // });
   } else {
     mobileNav.style.display = "block";
+    // mobileNav.animate([
+    //   { height: '0px' }, // Start state
+    //   { height: 'auto' }  // End state
+    // ], {
+    //   duration: 500, // Animation duration in milliseconds
+    //   easing: 'ease-in-out',
+    //   fill: 'forwards' // Keep the end state after animation
+    // });
   }
+
+
   console.log("toggle!");
 }
